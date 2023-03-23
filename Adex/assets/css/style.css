@@ -494,11 +494,106 @@ body.nav.active {
 /*-----------------------------------*\
   #SERVICE
 \*-----------------------------------*/
+.service {
+  text-align: center;
+}
 
+.service .section-title {
+  margin-block-end: 50px;
+}
+
+.service-card {
+  padding: 40px;
+  margin: 30px;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--radius-6);
+}
+
+.service-card .card-icon {
+  width: 60px;
+  height: 60px;
+  background-color: var(--violet-blue-crayola);
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  font-size: 2.5rem;
+  border-radius: var(--radius-circle);
+  margin-inline: auto;
+}
+
+.service-card .card-icon ion-icon {
+  --ionicon-stroke-width: 50px;
+}
+
+.service-card .card-title {
+  margin-block: 16px 10px;
+}
+
+.service .btn-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-block-start: 10px;
+  color: var(--violet-blue-crayola);
+  font-weight: var(--fw-700);
+  transition: var(--transition-1);
+}
+
+.service-card .btn-text:is(:hover, :focus-visible) {
+  opacity: 0.5;
+}
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
+.about .container {
+  display: grid;
+  gap: 50px;
+}
 
+.about .section-title {
+  margin-block-end: 35px;
+}
+
+.accordian-card .card-title {
+  padding-block-end: 20px;
+}
+
+.accordian-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.accordian-btn ion-icon {
+  font-size: 1.5rem;
+  color: var(--blue-crayola);
+  transition: var(--transition-1);
+}
+
+.accordian-card.expanded .accordian-btn ion-icon {
+  transform: rotate(0.5turn);
+}
+
+.accordian-btn .span {
+  transition: var(--transition-1);
+}
+
+.accordian-btn:is(:hover, :focus-visible) .span,
+.accordian-card.expanded .accordian-btn .span {
+  color: var(--violet-blue-crayola);
+}
+
+.accordian-content {
+  padding-inline-start: 24px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordian-card.expanded .accordian-content {
+  max-height: max-content;
+  padding-block-start: 20px;
+}
 /*-----------------------------------*\
   #FEATURES
 \*-----------------------------------*/
