@@ -412,7 +412,7 @@ body.nav.active {
   margin-block: 24px 36px;
 }
 
-.btn-wrappper {
+.btn-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -424,7 +424,6 @@ body.nav.active {
 .hero-card {
   position: relative;
 }
-
 .hero-card .play-btn {
   position: absolute;
   top: 50%;
@@ -434,11 +433,10 @@ body.nav.active {
   color: var(--charcoal);
   font-size: 2rem;
   padding: 25px;
-  border-radius: var(--radius-circle);
+  border-radius: 50%;
   transition: var(--transition-1);
   animation: pulse 2s ease infinite;
 }
-
 .hero-card .play-btn.btn:is(:hover, :focus-visible) {
   color: var(--violet-blue-crayola);
 }
